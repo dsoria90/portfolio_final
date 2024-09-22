@@ -1,0 +1,155 @@
+/* Estilos Globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navegación */
+header {
+    background-color: #282c34;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #61dafb;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    box-shadow: 0 0 15px 5px rgba(209, 207, 207, 0.3);
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Sección Logros */
+.logros {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.logros h2 {
+    font-size: 2rem;
+    color: #282c34;
+}
+
+.logros ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.logros ul li {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 65%;
+    border-radius: 5px;
+    box-shadow: 0 24px 28px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Estilos del contenedor principal para que las secciones estén una debajo de la otra */
+main {
+    display: block;
+    padding: 20px;
+}
+
+/* Estilos para las secciones */
+main section {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logros ul li {
+        max-width: 90%; /* Aumenta el ancho de los elementos en pantallas pequeñas */
+    }
+
+}
+form {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    max-width: 400px; /* Limita el ancho del formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+    background: transparent; /* Fondo blanco para el formulario */
+    padding: 1px; /* Espaciado interno */
+}
+
+label {
+    margin: 10px 0 5px; /* Espaciado entre etiqueta y campo */
+    font-weight: bold; /* Resaltar etiquetas */
+}
+
+input, textarea, button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    background-color: #282c34; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Resaltar texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #c2ff1c; /* Color de fondo del botón al pasar el mouse */
+}
