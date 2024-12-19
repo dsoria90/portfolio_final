@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: rgb(47, 47, 48);
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -12,13 +12,13 @@ body {
 header {
     padding: 20px; /* SEPARACION */
     text-align: center; /* CENTRADO */
-    background: linear-gradient(to right, #6a11cb, #2575fc); /*GRADIENTE*/
+    background-color: #282c34;
 }
 
 /* ESTILO DE LOS LINKS DE NAVEGACIÓN */
 nav a {
     color: #fff; /* COLOR */
-    background-color: #333; /*COLOR DE FONDO*/
+    background: linear-gradient(to right, #6a11cb, #2575fc); /*GRADIENTE*/
     text-decoration: none;
     padding: 10px 20px; /* ESPACIADO INTERNO DE LOS ENLACES */
     margin: 0 10px; /* ESPACIADO ENTRE LOS ENLACES */
@@ -48,20 +48,15 @@ nav a:hover {
     margin-bottom: 20px; 
 }
 
-.principal img {
-    box-shadow: 0 0 15px 5px rgba(209, 207, 207, 0.3); /* PROPIEDADES DE IMAGEN*/
-}
-
 .principal p {
     font-size: 1.2rem;
-    max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
 /* SECCIÓN CONT CLASS */
 .cont {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -120,17 +115,163 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 50%;
 }
 
 button:hover {
-    background-color: #c2ff1c;
+    background-color: #dd06c0;
 }
 
-/* FOOTER */
-footer {
-    background-color: #282c34;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 0;
+
+.descarga a {
+    color: #fff; /* COLOR */
+    background-color: #4b4b4b; /*COLOR DE FONDO*/
+    text-decoration: none;
+    padding: 10px 20px; /* ESPACIADO INTERNO DE LOS ENLACES */
+    margin: 0 10px; /* ESPACIADO ENTRE LOS ENLACES */
+    display: inline-block; /* BLOQUEO */
+    border: 2px solid #df08a993; /* BORDE BLANCO */
+    border-radius: 50px; /* BORDE REDONDEADO */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* TRANSICIÓN SUAVE DEL OVER */
 }
+
+.descarga a:hover {
+    background-color: #61dafb; /* COLOR DE FONDO AL PASAR EL CURSOR */
+    border-color: #015870; /* CAMBIAR EL COLOR DEL BORDE */
+    color: #000; /* CAMBIA EL COLOR DE LA LETRA */
+}
+
+.link-contacto {
+    background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.link-contacto a img {
+        height: 30px;
+        width: 30px;
+        padding: 50px;
+}
+  
+#mensaje {
+    resize: none; /* Impide que se pueda redimensionar */
+    width: 100%;  /* Ancho del textarea */
+    height: 150px; /* Altura fija */
+}
+
+/*scroll*/
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilo del menú hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      width: 80%;
+      flex-direction: column;
+      gap: 0;
+      position: absolute;
+      top: 50px;
+      left: 5px;
+      padding: 10px 0;
+    }
+  
+    .menu a {
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+      background: #282c34;
+      margin-left: 35px;
+    }
+    
+    .menu-toggle {
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  }
+
+/* FOOTER */
+/* Estilos generales del footer */
+footer {
+    display: flex;
+    align-items: center;  /* Alinea los elementos verticalmente */
+    padding: 10px;
+    background-color: #c2c2c2;
+    color: rgb(0, 0, 0);
+  }
+  
+  footer p {
+    margin-left: 20%;  /* Elimina el margen del párrafo */
+    font-size: 16px;
+    padding-inline: 200px;
+  }
+  
+  footer img {
+    max-width: 100%;  /* Hace que la imagen sea redimensionable */
+    height: auto;     /* Mantiene la relación de aspecto de la imagen */
+    width: 150px;     /* Tamaño inicial de la imagen */
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;  /* Cambia la dirección del contenido a columna */
+      text-align: center;      /* Centra el texto */ 
+    }
+    
+    footer p {
+        width: 75%;  /* Asegura que el texto ocupe el 55% restante */
+        margin-left: 10px;
+    }
+
+    footer img {
+      width: 40%;  /* Hace que la imagen ocupe el 100% del ancho en pantallas pequeñas */
+      margin-top: 10px;  /* Da un poco de espacio entre el texto y la imagen */
+    }
+  }
+  
