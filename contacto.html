@@ -9,14 +9,21 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="sobremi.html">Sobre Mí</a>
-            <a href="skills.html">Habilidades</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="testimonios.html">Testimonios</a>
-            <a href="portfolio.html">Portafolio</a>
-            <a href="cv.html">Currículum</a>
-            <a href="contacto.html">Contacto</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="sobremi.html">Sobre Mí</a>
+                <a href="skills.html">Habilidades</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="testimonios.html">Testimonios</a>
+                <a href="portfolio.html">Portafolio</a>
+                <a href="cv.html">Currículum</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
         </nav>
     </header>
 
@@ -36,14 +43,22 @@
             <button type="submit">Enviar</button>
         </form>
         </section>
-        <section class="cont">
-            <p><h1>También me podes contactar en: <br>
-                   dsoriariveros@uade.edu.ar || 11 23948325 || <a href="https://www.linkedin.com/in/diegosoriatech/">LinkedIn</a></h1></p>
+        <section class="link-contacto">
+            <h4>También me podes contactar a través de:</h4> <br>
+                <a href="mailto:dsoriariveros@uade.edu.ar" class="email-link">
+                    <img src="img/mail.png" alt="linkedin"></a>
+                   <a href="https://discordapp.com/users/deex7285" target="_blank">
+                    <img src="img/discor.png" alt="linkedin"></a>
+                    <a href="https://www.linkedin.com/in/diegosoriatech/" target="_blank">
+                        <img src="img/link.png" alt="linkedin"></a>
         </section>
     </main>
 
+    <script src="js/menu.js"></script>
+    
     <footer>
-        <p>© 2024 Diego Soria</p>
+        <p>Todos los derechos reservados © 2024 Diego Soria L.Nro: 1146945 </p>
+        <img src="img/uade.png" alt="logros">
     </footer>
 </body>
 </html>
